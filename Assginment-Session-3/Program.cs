@@ -71,12 +71,12 @@ namespace Assginment_Session_3
             //     and modifying the value of one variable and mention what will happen
             // 
 
-            //int x = 10;   //  x = 10 
-            //int y = x;    //  copy(x) -> y     y = x = 10   becouse int => value type => تحزن في stack
-            //y = 20;       //  y = 20  ,  x = 10  
+            // int x = 10;       //  x = 10 
+            //  int y = x;        //  copy(x) -> y     y = x = 10   becouse int => value type => تحزن في stack
+            //  y = 20;           //  y = 20  ,  x = 10  
 
-            //Console.WriteLine(x);  // 10
-            //Console.WriteLine(y);  // 10
+            // Console.WriteLine(x);  // 10
+            // Console.WriteLine(y);  // 20
 
 
             #endregion
@@ -86,7 +86,7 @@ namespace Assginment_Session_3
             ////  6-	Write C# program that Assigning one reference type variable to another and
             ////   modifying the object through one variable and mention what will happen
 
-            //Point p01;        // => reference point p1 ,  stack => 4 Byte , Heaps => 0  
+            //Point p01;           // => reference point p1 ,  stack => 4 Byte , Heaps => 0  
 
             //p01 = new Point();      // => Heaps => 8 Byte (x = 0 ,y = 0 ) defult , p1 =>  object بيشاور علي مكان ال  
 
@@ -101,13 +101,15 @@ namespace Assginment_Session_3
             //Console.WriteLine(p02.Y);      // 0 
 
 
-            //p02 = p01;    // p1&p2  unreachable object  <= p2 الاتنين هيشاورو علي نفس المكان و الي كان متخزن جوا ال  
+            //p02 = p01;    //   unreachable object  <= p2 الاتنين هيشاورو علي نفس المكان و الي كان متخزن جوا ال  
 
             //p01.X = 50;                 // p01.X & p02.X => 50
             //p02.Y = 100;                // p01.Y & p02.Y => 110
 
             //Console.WriteLine(p02.X);       // 50
-            //Console.WriteLine(p02.Y);      // 100
+            //Console.WriteLine(p02.Y);       // 100
+            //Console.WriteLine(p01.X);       // 50
+            //Console.WriteLine(p02.Y);       // 100
 
             #endregion
 
@@ -192,8 +194,7 @@ namespace Assginment_Session_3
 
             //Console.WriteLine(" Enter the temperature degrees : ");
             //// int.TryParse(Console.ReadLine(), out var degree);    // => TryPars
-            //// int degree = Convert.ToInt32(Console.ReadLine());    // => Convert 
-            //// int degree= int.Parse(Console.ReadLine());           // => Parse 
+
             //if (degree < 10)
             //    Console.WriteLine(" \n Just Cold \n");
             //else if (degree > 30) 
@@ -224,8 +225,8 @@ namespace Assginment_Session_3
             //int.TryParse(Console.ReadLine(),out int year);
 
 
-            //    Console.WriteLine(" Today’s date : {0} , {1} , {2} ", day, month, year);
-            // eny ony     //    Console.WriteLine(" Today’s date : {0} / {1} / {2} ", day, month, year);
+            //  Console.WriteLine(" Today’s date : {0} , {1} , {2} ", day, month, year)
+            // eny ony      //  Console.WriteLine(" Today’s date : {0} / {1} / {2} ", day, month, year);
             //  Console.WriteLine(" Today’s date : {0} - {1} - {2} ", day, month, year);
 
             #endregion
@@ -244,11 +245,11 @@ namespace Assginment_Session_3
 
              */
 
+            //   Solution =>  c)	 The event is on 06/14/2024
 
             //DateTime date = new DateTime(2024, 6, 14);
-            //Console.WriteLine($"The event is on {date:MM/dd/yyyy}");
+            //Console.WriteLine($"The event is on {date:MM/dd/yyyy}"); // Month => MM , Day => dd , Year => yyyy
 
-            //   Solution =>  c)	 The event is on 06/14/2024
 
             #endregion
 
@@ -268,14 +269,16 @@ namespace Assginment_Session_3
 
              */
 
-            //int d;
-            //d = Convert.ToInt32(!(30 < 20)); // ( 30 < 20 ) => false //  => ! False => true  //  true => 1
-
             // Solution f)	A value 1 will be assigned to d.
+
+            //int d;
+            //d = Convert.ToInt32(!(30 < 20));  // ( 30 < 20 ) => false //  => ! False => true  //  true => 1
+
+
             #endregion
 
 
-            #region 14 
+            #region Q14 
 
             /*
              * 14-	Which of the following is the correct output for the C# code given below?
@@ -289,17 +292,19 @@ namespace Assginment_Session_3
                 e)	6.5 6.5
 
              */
+
+            // Solution   d)	6 1
+
             //Console.WriteLine(13 / 2 + " " + 13 % 2); 
 
             // 13 / 2 = 6  => because not Float 
             // 13 % 2 = 1   
 
-            // Solution   d)	6 1
 
 
             #endregion
 
-            #region 15
+            #region Q15
 
             /*
              * int num = 1, z = 5;
