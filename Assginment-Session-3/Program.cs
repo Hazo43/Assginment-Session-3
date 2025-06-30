@@ -1,4 +1,5 @@
-﻿using System.ComponentModel;
+﻿using System;
+using System.ComponentModel;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Assginment_Session_3
@@ -244,24 +245,89 @@ namespace Assginment_Session_3
              */
 
 
-            //  a)	 The event is on 14/06/2024
             //DateTime date = new DateTime(2024, 6, 14);
             //Console.WriteLine($"The event is on {date:MM/dd/yyyy}");
 
-            //// b)	 The event is on 2024-06-14
-            //DateTime date = new DateTime(2024, 6, 14);
-            //Console.WriteLine($"The event is on {date:yyyy-MM-dd}");
+            //   Solution =>  c)	 The event is on 06/14/2024
 
-            // c) The event is on 06/14/2024 
-            //DateTime date = new DateTime(2024, 6, 14);
-            //Console.WriteLine($"The event is on {date:MM-dd-yyyy}");
+            #endregion
 
-          //  d)	 The event is on June ,4, 2024
-            //DateTime date = new DateTime(2024, 6, 14);
-            //Console.WriteLine($"The event is on {date:MMMM/dd/yyyy}");
+            #region Q13
+
+            /*
+             * 13-	Which of the following statements is correct about the C#.NET code snippet given below?
+
+                int d; 
+                d = Convert.ToInt32( !(30 < 20) );  
+
+                e)	A value 0 will be assigned to d.
+                f)	A value 1 will be assigned to d.
+                g)	A value -1 will be assigned to d.
+                h)	The code reports an error.
+                i)	The code snippet will work correctly if ! is replaced by Not.
+
+             */
+
+            //int d;
+            //d = Convert.ToInt32(!(30 < 20)); // ( 30 < 20 ) => false //  => ! False => true  //  true => 1
+
+            // Solution f)	A value 1 will be assigned to d.
+            #endregion
 
 
-            #endregion 
+            #region 14 
+
+            /*
+             * 14-	Which of the following is the correct output for the C# code given below?
+
+                Console.WriteLine(13 / 2 + " " + 13 % 2); 
+
+                a)	6.5 1
+                b)	6.5 0
+                c)	6 0
+                d)	6 1
+                e)	6.5 6.5
+
+             */
+            //Console.WriteLine(13 / 2 + " " + 13 % 2); 
+
+            // 13 / 2 = 6  => because not Float 
+            // 13 % 2 = 1   
+
+            // Solution   d)	6 1
+
+
+            #endregion
+
+            #region 15
+
+            /*
+             * int num = 1, z = 5;
+
+                if (!(num <= 0))
+                    Console.WriteLine( ++num + z++ + " " + ++z ); 
+                else
+                    Console.WriteLine( --num + z-- + " " + --z ); 
+
+
+                a)	5 6
+                b)	6 5
+                c)	6 6
+                d)	7 7
+
+             */
+            // Solution    d)	7 7
+
+            //int num = 1, z = 5;
+
+            //if (!(num <= 0)) // (num <= 0) => false /  !false => True  / num = 1
+            //    Console.WriteLine(++num + z++ + " " + ++z);
+            //                     // 2  +  5 = 7     +  7
+            //else
+            //    Console.WriteLine(--num + z-- + " " + --z);
+
+            #endregion
+
 
 
         }
