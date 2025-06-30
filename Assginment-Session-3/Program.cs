@@ -215,20 +215,20 @@ namespace Assginment_Session_3
                 Today's date : 20 – 11 – 2001
              */
 
-            //Console.WriteLine(" Enter Your The day -> ");
-            //int.TryParse(Console.ReadLine(), out int day);
+            // Console.WriteLine(" Enter Your The day -> ");
+            // int.TryParse(Console.ReadLine(), out int day);
 
-            //Console.WriteLine(" Enter Your The Month -> ");
+            // Console.WriteLine(" Enter Your The Month -> ");
             //int.TryParse(Console.ReadLine(), out int month);
 
-            //Console.WriteLine(" Enter Your The Years -> ");
-            //int.TryParse(Console.ReadLine(),out int year);
+            // Console.WriteLine(" Enter Your The Years -> ");
+            // int.TryParse(Console.ReadLine(),out int year);
 
 
             //  Console.WriteLine(" Today’s date : {0} , {1} , {2} ", day, month, year)
-            // eny ony      //  Console.WriteLine(" Today’s date : {0} / {1} / {2} ", day, month, year);
+            // eny ony       //  Console.WriteLine(" Today’s date : {0} / {1} / {2} ", day, month, year);
             //  Console.WriteLine(" Today’s date : {0} - {1} - {2} ", day, month, year);
-
+            // Console.WriteLine($" Today’s date : {day} , {month} , {year} ");
             #endregion
 
             #region Q12
@@ -333,14 +333,9 @@ namespace Assginment_Session_3
 
             #endregion
 
+            
 
 
         }
-
-
-
     }
-
-    
-
 }
