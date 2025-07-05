@@ -60,7 +60,10 @@ namespace Assginment_Session_3
             // 4-	Write C# program that Extract a substring from a given string.
             // 
 
-
+            string word = "Hazo Gaber";
+            string Substring = word.Substring(0, 4);  // 
+            Console.WriteLine(Substring);            // output Hazo 
+                 
 
             #endregion
 
@@ -333,7 +336,7 @@ namespace Assginment_Session_3
 
             #endregion
 
-            
+
 
 
         }
